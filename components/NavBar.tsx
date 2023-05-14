@@ -5,7 +5,7 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false)
   return (
     <nav>
-      <div className="justify-between w-screen bg-black h-16 inline-flex px-6 py-auto fixed font-medium top-0">
+      <div className="m-0 p-1 justify-between w-screen bg-black inline-flex fixed font-medium top-0">
         <div>
           <h3 className="text-2xl font-medium text-blue-500 m-4">EXAMPLE</h3>
         </div>
@@ -38,7 +38,7 @@ export default function NavBar() {
       </div>
       <div className="flex m-4 p-1 justify-end lg:hidden">
         <div
-          className="space-y-2"
+          className="space-y-2 fixed"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
@@ -51,7 +51,7 @@ export default function NavBar() {
         >
           <div className="CROSS-ICON absolute top-0 right-0 px-8 py-8">
             <svg
-              className="h-8 w-8 text-gray-600"
+              className="h-8 w-8 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
