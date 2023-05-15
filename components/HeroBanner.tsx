@@ -6,7 +6,7 @@ export default function HeroBanner() {
     <>
       <div className="w-screen h-screen bg-black border-white text-white mt-26">
         <div className="float-left bg-black w-2/5 h-full z-20">
-          <div className="h-2/5"></div>
+          <div className="h-1/4 md:h-2/5"></div>
           <div className="px-6 md:px-12 heroText">
             <div className="uppercase text-3xl">Lorem ipsum</div>
             <div className="text-lg">
