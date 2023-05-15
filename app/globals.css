@@ -43,3 +43,35 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.heroBlocks {
+  animation-name: hero-animation;
+  animation-duration: 0.8s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
+.heroText {
+  animation-name: hero-text-animation;
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
+@keyframes hero-animation {
+  from {
+    margin-top: -80vh;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes hero-text-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

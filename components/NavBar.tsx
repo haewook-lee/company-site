@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav>
       <div className="m-0 p-1 justify-between w-screen bg-black inline-flex fixed font-medium top-0">
         <div>
-          <h3 className="text-2xl font-medium text-blue-500 m-4">EXAMPLE</h3>
+          <h3 className="text-2xl font-medium text-yellow-500 m-4">EXAMPLE</h3>
         </div>
         <div className="hidden pr-2 space-x-8 lg:flex">
           <a
