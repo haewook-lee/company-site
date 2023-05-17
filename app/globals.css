@@ -52,7 +52,14 @@ body {
 }
 
 .heroText {
-  animation-name: hero-text-animation;
+  animation-name: fade-animation;
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
+.imgGrid {
+  animation-name: fade-animation;
   animation-duration: 2s;
   animation-iteration-count: one;
   animation-timing-function: linear;
@@ -67,7 +74,7 @@ body {
   }
 }
 
-@keyframes hero-text-animation {
+@keyframes fade-animation {
   from {
     opacity: 0;
   }
