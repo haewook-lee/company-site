@@ -6,7 +6,7 @@ export default function HalfBanner() {
   return (
     <>
       <div
-        className="position-relative block w-screen overflow-hidden h-screen bg-black border-white text-white mt-26"
+        className="position-relative block w-screen overflow-hidden h-screen bg-black border-white text-white my-36"
         style={{ position: "relative", zIndex: "0" }}
       >
         <div className="block lg:inline-block bg-black w-screen h-1/2 lg:w-1/2 lg:h-full">

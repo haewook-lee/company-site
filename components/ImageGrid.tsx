@@ -32,7 +32,7 @@ const imgItems: ImgItems[] = [
 
 export default function ImageGrid() {
   return (
-    <div className="block m-auto bg-black min-h-screen w-screen lg:max-w-5xl pt-32">
+    <div className="block m-auto bg-black min-h-screen w-screen lg:max-w-5xl pt-32 my-36">
       {imgItems.map((item: any, index: number) => {
         return (
           <div
