@@ -29,6 +29,7 @@ body {
 .hideMenuNav {
   display: none;
 }
+
 .showMenuNav {
   display: block;
   position: fixed;
@@ -44,9 +45,23 @@ body {
   align-items: center;
 }
 
-.heroBlocks {
+.heroBlocks1 {
   animation-name: hero-animation;
-  animation-duration: 0.8s;
+  animation-duration: 0.2s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
+.heroBlocks2 {
+  animation-name: hero-animation;
+  animation-duration: 0.4s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
+.heroBlocks3 {
+  animation-name: hero-animation;
+  animation-duration: 0.6s;
   animation-iteration-count: one;
   animation-timing-function: linear;
 }
