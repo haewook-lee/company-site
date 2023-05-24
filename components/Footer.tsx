@@ -7,9 +7,7 @@ export default function Footer() {
     <footer>
       <div className="block bg-black p-16 md:p-28 mt-36">
         <div className="pt-6 block md:inline-block md:w-1/3 text-white align-text-top">
-          <h3 className="px-2 text-2xl font-medium text-yellow-500 ">
-            EXAMPLE
-          </h3>
+          <h3 className="px-2 text-2xl font-medium text-yellow-500 ">Bantam</h3>
           <SocialIcon
             bgColor="black"
             fgColor="white"

@@ -14,20 +14,20 @@ const imgItems: ImgItems[] = [
   {
     img: "/handshake.png",
     alt: "handshake",
-    title: "title",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad inim veniam",
+    title: "Connect",
+    text: "Unleash the power of personalized consumer connections",
   },
   {
-    img: "/handshake.png",
-    alt: "handshake",
-    title: "title",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad inim veniam",
+    img: "/tree.png",
+    alt: "tree",
+    title: "Plan",
+    text: "Unlock the true potential of your business with thoughtful planning",
   },
   {
-    img: "/handshake.png",
-    alt: "handshake",
-    title: "title",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad inim veniam",
+    img: "/jump.png",
+    alt: "jump",
+    title: "Grow",
+    text: "Accelerate your success through sustainable growth initiatives",
   },
 ]
 
@@ -46,7 +46,7 @@ export default function ImageGrid() {
             key={index}
             className={`${
               inView ? "imgGrid opacity-1" : "opacity-0"
-            } w-full md:w-1/3 block md:inline-block m-auto py-14`}
+            } w-full md:w-1/3 block md:inline-block m-auto py-14 align-text-top`}
             // style={{ animationDelay: `${(index + 1) * 250 + "ms"}` }}
           >
             <div className={`uppercase table m-auto text-white text-2xl`}>

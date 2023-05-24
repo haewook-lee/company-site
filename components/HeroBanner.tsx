@@ -17,10 +17,10 @@ export default function HeroBanner() {
         <div className="float-left bg-black w-2/5 h-full z-20">
           <div className="h-1/5 md:h-1/3 lg:2/5"></div>
           <div className="px-3 md:px-6 lg:px-12 heroText">
-            <div className="uppercase text-3xl">Lorem ipsum</div>
+            <div className="uppercase text-3xl">Unlock Your Potential</div>
             <div className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Harness the power of innovation to drive your business forward in
+              the evolving digital space
             </div>
           </div>
         </div>

@@ -66,6 +66,13 @@ body {
   animation-timing-function: linear;
 }
 
+.heroBlocks4 {
+  animation-name: hero-animation;
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: linear;
+}
+
 .heroText {
   animation-name: fade-animation;
   animation-duration: 2s;
@@ -75,7 +82,7 @@ body {
 
 .imgGrid {
   animation-name: fade-animation;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: one;
   animation-timing-function: linear;
 }
