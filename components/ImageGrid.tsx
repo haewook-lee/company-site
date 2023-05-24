@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import * as React from "react"
+import { useInView } from "react-intersection-observer"
 
 type ImgItems = {
   img: string
@@ -31,16 +32,24 @@ const imgItems: ImgItems[] = [
 ]
 
 export default function ImageGrid() {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.4,
+    // triggerOnce: true,
+  })
+
   return (
     <div className="block m-auto bg-black min-h-screen w-screen lg:max-w-5xl pt-32 my-36">
       {imgItems.map((item: any, index: number) => {
         return (
           <div
+            ref={ref}
             key={index}
-            className="imgGrid w-full md:w-1/3 block md:inline-block m-auto py-14"
-            style={{ animationDelay: `${(index + 1) * 250 + "ms"}` }}
+            className={`${
+              inView ? "imgGrid opacity-1" : "opacity-0"
+            } w-full md:w-1/3 block md:inline-block m-auto py-14`}
+            // style={{ animationDelay: `${(index + 1) * 250 + "ms"}` }}
           >
-            <div className="uppercase table m-auto text-white text-2xl">
+            <div className={`uppercase table m-auto text-white text-2xl`}>
               {item.title}
             </div>
             <img
