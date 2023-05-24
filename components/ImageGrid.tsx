@@ -33,16 +33,18 @@ const imgItems: ImgItems[] = [
 
 export default function ImageGrid() {
   const { ref, inView, entry } = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
     // triggerOnce: true,
   })
 
   return (
-    <div className="block m-auto bg-black min-h-screen w-screen lg:max-w-5xl pt-32 my-36">
+    <div
+      ref={ref}
+      className="block m-auto bg-black min-h-screen w-screen lg:max-w-5xl pt-32 my-36"
+    >
       {imgItems.map((item: any, index: number) => {
         return (
           <div
-            ref={ref}
             key={index}
             className={`${
               inView ? "imgGrid opacity-1" : "opacity-0"
