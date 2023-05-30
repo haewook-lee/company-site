@@ -31,7 +31,7 @@ const imgItems: ImgItems[] = [
   },
 ]
 
-export default function ImageGrid() {
+export default function SquareGrid() {
   const { ref, inView, entry } = useInView({
     threshold: 0.1,
     // triggerOnce: true,
@@ -40,7 +40,7 @@ export default function ImageGrid() {
   return (
     <div
       ref={ref}
-      className="block m-auto bg-black min-h-screen w-screen pt-32 my-36"
+      className="block m-auto bg-black min-h-screen w-screen my-36 px-4"
     >
       {imgItems.map((item: any, index: number) => {
         return (
@@ -48,20 +48,15 @@ export default function ImageGrid() {
             key={index}
             className={`${
               inView ? "imgGrid opacity-1" : "opacity-0"
-            } w-full md:w-1/3 block md:inline-block m-auto py-14 align-text-top`}
-            // style={{ animationDelay: `${(index + 1) * 250 + "ms"}` }}
+            } squareGrid w-full md:w-1/3 border-black border-4 block md:table-cell m-auto py-48 text-align-top bg-cover bg-center max-h-3/4`}
+            style={{ backgroundImage: `url(${item.img})` }}
           >
             <div
-              className={`uppercase table m-auto text-white text-2xl xl:text-4xl`}
+              className={`uppercase table m-auto text-black text-2xl xl:text-4xl`}
             >
               {item.title}
             </div>
-            <img
-              className="rounded-full py-6 object-cover w-44 xl:w-64 h-auto m-auto"
-              src={item.img}
-              alt={item.alt}
-            ></img>
-            <div className="px-10 table m-auto text-white xl:text-2xl">
+            <div className="px-10 table m-auto text-black xl:text-2xl">
               {item.text}
             </div>
           </div>

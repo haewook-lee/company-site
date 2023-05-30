@@ -87,6 +87,12 @@ body {
   animation-timing-function: linear;
 }
 
+.squareGrid:hover {
+  transform: scale(1.05);
+  z-index: 5;
+  transition: 0.3s;
+}
+
 @keyframes hero-animation {
   from {
     margin-top: -80vh;

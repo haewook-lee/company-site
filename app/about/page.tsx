@@ -2,6 +2,7 @@ import HeroBanner from "@/components/HeroBanner"
 import ImageGrid from "@/components/ImageGrid"
 import Carousel from "@/components/Carousel"
 import HalfBanner from "@/components/HalfBanner"
+import SquareGrid from "@/components/SquareGrid"
 
 export default function Home() {
   return (
@@ -17,8 +18,7 @@ export default function Home() {
           }
         />
         <ImageGrid />
-        {/* <Carousel /> */}
-        <HalfBanner />
+        <SquareGrid />
       </div>
     </main>
   )

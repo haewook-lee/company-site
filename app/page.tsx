@@ -9,7 +9,6 @@ export default function Home() {
       <div className="w-full bg-black">
         <HeroBanner />
         <ImageGrid />
-        {/* <Carousel /> */}
         <HalfBanner />
       </div>
     </main>
