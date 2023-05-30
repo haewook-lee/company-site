@@ -10,11 +10,13 @@ export default function NavBar() {
         style={{ zIndex: "99" }}
       >
         <div>
-          <h3 className="text-2xl font-medium text-yellow-500 m-4">Bantam</h3>
+          <h3 className="text-2xl font-medium text-yellow-500 m-4">
+            <a href="/">Bantam</a>
+          </h3>
         </div>
         <div className="hidden pr-2 space-x-8 lg:flex">
           <a
-            href="#"
+            href="/about"
             className="hover:animate-pulse uppercase text-white m-4 border-b border-gray-400"
           >
             About Us
@@ -68,7 +70,7 @@ export default function NavBar() {
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a
-                  href="#"
+                  href="/about"
                   className="text-white m-4"
                   onClick={() => setIsNavOpen(false)}
                 >
