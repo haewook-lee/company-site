@@ -24,8 +24,8 @@ export default function HalfBanner() {
               inView ? "heroText opacity-1" : "opacity-0"
             } px-6 lg:px-12 lg:pr-24 text-yellow-500`}
           >
-            <div className="uppercase text-3xl">Embrace Change</div>
-            <div className="text-lg">
+            <div className="uppercase text-3xl xl:text-5xl">Embrace Change</div>
+            <div className="text-lg xl:text-2xl">
               Adapt, Innovate, and Succeed to embrace change in a dynamic
               landscape
             </div>
@@ -60,8 +60,10 @@ export default function HalfBanner() {
               inView ? "heroText opacity-1" : "opacity-0"
             } px-6 lg:px-12 lg:pl-24 text-right`}
           >
-            <div className="uppercase text-3xl text-black">Core Values</div>
-            <div className="text-lg text-black">
+            <div className="uppercase text-3xl xl:text-5xl text-black">
+              Core Values
+            </div>
+            <div className="text-lg xl-text-2xl text-black">
               Sustain the core values of your business and uphold the pillars of
               your integrity
             </div>
