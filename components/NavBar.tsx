@@ -22,19 +22,19 @@ export default function NavBar() {
             About Us
           </a>
           <a
-            href="#"
+            href="/work"
             className="hover:animate-pulse uppercase text-white m-4 border-b border-gray-400"
           >
             Our Work
           </a>
           <a
-            href="#"
+            href="/partners"
             className="hover:animate-pulse uppercase text-white m-4 border-b border-gray-400"
           >
             Our Partners
           </a>
           <a
-            href="#"
+            href="/contact"
             className="hover:animate-pulse uppercase text-white m-4 border-b border-gray-400"
           >
             Contact Us
