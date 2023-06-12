@@ -9,12 +9,12 @@ export default function Home() {
     <main>
       <div className="w-full bg-black">
         <HeroBanner
-          color1={"bg-amber-800"}
-          color2={"bg-emerald-600"}
-          color3={"bg-teal-300"}
-          title={"People First"}
+          color1={"bg-blue-700"}
+          color2={"bg-violet-500"}
+          color3={"bg-fuchsia-400"}
+          title={"Our Partners"}
           subtitle={
-            "We understand that behind every success there are the people that make it all possible"
+            "We work with our partners to collaborate and deliver the best possible. We live to serve"
           }
         />
         <ImageGrid />
