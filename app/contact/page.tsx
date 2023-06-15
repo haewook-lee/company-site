@@ -4,6 +4,7 @@ import Carousel from "@/components/Carousel"
 import HalfBanner from "@/components/HalfBanner"
 import SquareGrid from "@/components/SquareGrid"
 import MapGrid from "@/components/Map"
+import ContactForm from "@/components/ContactForm"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           subtitle={" "}
         />
         <MapGrid />
+        <ContactForm />
       </div>
     </main>
   )
